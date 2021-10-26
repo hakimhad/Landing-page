@@ -8,6 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
   <title>Frontend Mentor | Base Apparel coming soon page</title>
   
   <link rel="stylesheet" href="style.css" />
@@ -25,9 +27,12 @@
           Add your email below to stay up-to-date with announcements and our launch deals.
         </p>
       </div>
-      <div class="email">
-        Email Address
-      </div>
+      <form>
+        <input type="email" name="email" id="email">
+        <button class="btnEnvoyer"><span class="material-icons">
+          arrow_forward_ios
+          </span></button>
+      </form>
     </div>
     <div class="rightSide">
       <img src="/images/hero-desktop.jpg" alt="">
@@ -40,4 +45,11 @@
     </p>
   </footer>
 </body>
+<script>
+  const inputTxt = document.getElementById('email');
+
+  inputTxt.setCustomValidity('mettre adresse email valide')
+
+
+</script>
 </html>
